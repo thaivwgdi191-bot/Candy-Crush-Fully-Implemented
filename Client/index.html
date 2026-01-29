@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Duy Thai Vuong">
+        <title>Candy Game made with Phaser game engine</title>
+        <style>
+            @font-face 
+            {
+                font-family: 'CandyFont';
+                src: url('./Font/CandyFont.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            .font-preloader {
+                font-family: 'CandyFont';
+                position: absolute;
+                top: -100px;
+                visibility: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="game-container"></div>
+        <div class="font-preloader">.</div>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.js"></script>
+        <script type="module" src="./src/main.js"></script>
+    </body>
+</html>
